@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "indexedAt": "2026-03-10T02:12:00Z",
+  "totalSkills": 24,
+  "categories": ["Development","Data","System","Communication","Automation","Analysis","AI","Media"],
+  "models": {
+    "qwen-flash":      { "label": "Qwen Flash",      "color": "#7c6fff" },
+    "deepseek-coder":  { "label": "DeepSeek Coder",  "color": "#06b6d4" },
+    "codex":           { "label": "Codex",            "color": "#f59e0b" },
+    "gemini":          { "label": "Gemini",           "color": "#10b981" }
+  },
+  "skills": [
+    { "id":"skill_code_review",    "name":"Code Review",        "category":"Development",  "description":"Automated code review with style, security, and performance checks","version":"2.1.0","assignedTo":["VPS","Mac A"],"status":"active","icon":"🔍","model":"deepseek-coder" },
+    { "id":"skill_web_scrape",     "name":"Web Scraper",        "category":"Data",         "description":"Intelligent web scraping with DOM parsing and structured output","version":"1.4.2","assignedTo":["VPS"],"status":"active","icon":"🕸️","model":"qwen-flash" },
+    { "id":"skill_file_manager",   "name":"File Manager",       "category":"System",       "description":"Advanced file system operations, batch renaming, and organization","version":"1.2.0","assignedTo":["Mac A","Mac B"],"status":"active","icon":"📁","model":"qwen-flash" },
+    { "id":"skill_email_composer", "name":"Email Composer",     "category":"Communication","description":"Draft, format, and send professional emails with context awareness","version":"1.0.3","assignedTo":["Mac B"],"status":"active","icon":"📧","model":"qwen-flash" },
+    { "id":"skill_sql_analyst",    "name":"SQL Analyst",        "category":"Data",         "description":"Write, optimize, and explain complex SQL queries across multiple dialects","version":"2.0.1","assignedTo":["VPS","Mac A"],"status":"active","icon":"🗄️","model":"deepseek-coder" },
+    { "id":"skill_git_manager",    "name":"Git Manager",        "category":"Development",  "description":"Branch management, commit summaries, PR creation, and conflict resolution","version":"1.5.0","assignedTo":["VPS","Mac A","Mac B"],"status":"active","icon":"🌿","model":"deepseek-coder" },
+    { "id":"skill_scheduler",      "name":"Task Scheduler",     "category":"Automation",   "description":"Cron-based task scheduling with retry logic and priority queues","version":"1.1.0","assignedTo":["VPS"],"status":"active","icon":"⏰","model":"qwen-flash" },
+    { "id":"skill_image_proc",     "name":"Image Processor",    "category":"Media",        "description":"Resize, convert, watermark, and analyze images using Gemini vision","version":"1.3.0","assignedTo":["Mac B"],"status":"active","icon":"🖼️","model":"gemini" },
+    { "id":"skill_doc_summary",    "name":"Doc Summarizer",     "category":"Analysis",     "description":"Summarize PDFs, docs, and large text files with structured output","version":"1.0.2","assignedTo":["Mac A","Mac B"],"status":"active","icon":"📄","model":"gemini" },
+    { "id":"skill_api_tester",     "name":"API Tester",         "category":"Development",  "description":"Send HTTP requests, validate responses, and generate Postman collections","version":"1.2.1","assignedTo":["VPS","Mac A"],"status":"active","icon":"🔌","model":"qwen-flash" },
+    { "id":"skill_log_analyzer",   "name":"Log Analyzer",       "category":"System",       "description":"Parse and summarize server logs, detect anomalies and error patterns","version":"1.1.4","assignedTo":["VPS"],"status":"active","icon":"📊","model":"deepseek-coder" },
+    { "id":"skill_telegram_bot",   "name":"Telegram Bot",       "category":"Communication","description":"Send and receive Telegram messages, manage channels and groups","version":"2.2.0","assignedTo":["VPS","Mac B"],"status":"active","icon":"✈️","model":"qwen-flash" },
+    { "id":"skill_code_gen",       "name":"Code Generator",     "category":"AI",           "description":"Generate boilerplate, components, and full modules from natural language","version":"3.0.0","assignedTo":["VPS","Mac A","Mac B"],"status":"active","icon":"⚡","model":"codex" },
+    { "id":"skill_deploy",         "name":"Auto Deployer",      "category":"Automation",   "description":"CI/CD pipeline runner with rollback support and health checks","version":"1.0.5","assignedTo":["VPS"],"status":"active","icon":"🚀","model":"qwen-flash" },
+    { "id":"skill_db_backup",      "name":"DB Backup",          "category":"System",       "description":"Scheduled database dumps, compression, and encrypted cloud uploads","version":"1.0.1","assignedTo":["VPS"],"status":"active","icon":"💾","model":"qwen-flash" },
+    { "id":"skill_sentiment",      "name":"Sentiment Analyzer", "category":"Analysis",     "description":"Analyze tone and sentiment in messages, reviews, and social media","version":"1.1.0","assignedTo":["Mac B"],"status":"active","icon":"💬","model":"gemini" },
+    { "id":"skill_markdown_gen",   "name":"Markdown Generator", "category":"AI",           "description":"Convert structured data and outlines into well-formatted Markdown docs","version":"1.0.0","assignedTo":["Mac A","Mac B"],"status":"active","icon":"📝","model":"qwen-flash" },
+    { "id":"skill_perf_monitor",   "name":"Perf Monitor",       "category":"System",       "description":"Track CPU, memory, disk I/O, and network usage across all nodes","version":"2.0.0","assignedTo":["VPS","Mac A","Mac B"],"status":"active","icon":"📈","model":"qwen-flash" },
+    { "id":"skill_test_runner",    "name":"Test Runner",        "category":"Development",  "description":"Execute test suites (Jest, Pytest, Go test) and generate coverage reports","version":"1.4.0","assignedTo":["Mac A"],"status":"idle","icon":"🧪","model":"deepseek-coder" },
+    { "id":"skill_nlp_parser",     "name":"NLP Parser",         "category":"AI",           "description":"Named entity recognition, keyword extraction, and language detection","version":"1.2.0","assignedTo":["VPS","Mac B"],"status":"active","icon":"🧠","model":"gemini" },
+    { "id":"skill_data_pipeline",  "name":"Data Pipeline",      "category":"Data",         "description":"ETL workflows with validation, transformation, and error logging","version":"1.0.3","assignedTo":["VPS"],"status":"active","icon":"🔄","model":"deepseek-coder" },
+    { "id":"skill_calendar_sync",  "name":"Calendar Sync",      "category":"Automation",   "description":"Sync tasks and deadlines with Google Calendar and iCal feeds","version":"1.0.0","assignedTo":["Mac B"],"status":"idle","icon":"📅","model":"qwen-flash" },
+    { "id":"skill_sec_scan",       "name":"Security Scanner",   "category":"Development",  "description":"OWASP vulnerability scan, dependency audit, and secret detection","version":"1.1.2","assignedTo":["VPS","Mac A"],"status":"active","icon":"🔒","model":"deepseek-coder" },
+    { "id":"skill_voice_notes",    "name":"Voice Notes",        "category":"Media",        "description":"Transcribe voice recordings into structured meeting notes and action items","version":"1.0.1","assignedTo":["Mac B"],"status":"idle","icon":"🎙️","model":"gemini" }
+  ]
+}
