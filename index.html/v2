@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Mission Control - Enhanced</title>
+    <style>
+        :root { --bg-primary: #0f0f1a; --bg-secondary: #1a1a2e; --bg-tertiary: #252540; --accent-primary: #6366f1; --accent-secondary: #8b5cf6; --text-primary: #ffffff; --text-secondary: #a0a0b0; --success: #10b981; --danger: #ef4444; --border: #3a3a5a; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg-primary); color: var(--text-primary); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid var(--border); margin-bottom: 30px; }
+        .header h1 { font-size: 2rem; font-weight: bold; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn { padding: 12px 24px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); color: white; margin: 5px; }
+        .agent-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .agent-card { background: var(--bg-tertiary); border: 2px solid var(--border); border-radius: 12px; padding: 20px; }
+        .progress-bar { height: 8px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden; margin: 15px 0; }
+        .progress-fill { height: 100%; background: linear-gradient(135deg, var(--success), #34d399); border-radius: 4px; transition: width 0.3s ease; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 OpenClaw Mission Control - Enhanced</h1>
+        </div>
+        <h3>🔑 LLM API Key Manager</h3>
+        <p>Add your AI API keys below</p>
+        <button class="btn">➕ Add API Key</button>
+        
+        <h3 style="margin-top: 30px;">📦 Your AI Agents</h3>
+        <div class="agent-grid" style="margin-top: 20px;">
+            <div class="agent-card">
+                <h4>🎵 SUNO Automation Agent</h4>
+                <p>Generate music using Suno.com with 100+ prompts</p>
+                <button class="btn">▶️ Launch</button><button class="btn">✏️ Edit</button>
+            </div>
+            <div class="agent-card">
+                <h4>🎛️ DJ Mix Agent</h4>
+                <p>Beatmix 15 MP3s into 1-hour mix</p>
+                <button class="btn">▶️ Launch</button><button class="btn">✏️ Edit</button>
+            </div>
+            <div class="agent-card">
+                <h4>🐕 Dog Video Agent</h4>
+                <p>AI dog videos for TikTok/Reels</p>
+                <button class="btn">▶️ Launch</button><button class="btn">✏️ Edit</button>
+            </div>
+            <div class="agent-card">
+                <h4>📊 VendorFlow Agent</h4>
+                <p>Vendor management automation</p>
+                <button class="btn">▶️ Launch</button><button class="btn">✏️ Edit</button>
+            </div>
+        </div>
+        
+        <h3 style="margin-top: 30px;">🎬 Live Browser Feed</h3>
+        <div style="background: var(--bg-tertiary); border: 2px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 20px;">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+            </div>
+            <p style="color: var(--text-secondary); margin-top: 10px;">Progress: <span id="progress">0/100</span> | ETA: <span id="eta">--:--</span></p>
+        </div>
+        
+        <h3 style="margin-top: 30px;">📋 System Logs</h3>
+        <div style="background: var(--bg-tertiary); border: 2px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 20px; max-height: 200px; overflow-y: auto;">
+            <p style="color: var(--success);">✅ Dashboard initialized successfully</p>
+            <p style="color: var(--text-primary);">ℹ️ Connected to Mac B browser</p>
+        </div>
+    </div>
+    <script>
+        setInterval(function() {
+            var progress = parseInt(document.getElementById('progressFill').style.width) || 0;
+            progress = Math.min(progress + 2, 100);
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progress').textContent = progress + '/100';
+        }, 30000);
+    </script>
+</body>
+</html>
